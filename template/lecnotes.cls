@@ -18,6 +18,10 @@
 \colorlet{mycitecolor}{Aquamarine}
 \colorlet{myurlcolor}{Aquamarine}
 
+\colorlet{light-red}{red!30}
+\colorlet{light-blue}{blue!30}
+\colorlet{light-green}{green!30}
+
 \hypersetup{
   linkcolor  = mylinkcolor!\myshade!black,
   citecolor  = mycitecolor!\myshade!black,
@@ -216,6 +220,12 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 \newcommand{\range}{\text{Range} \;}
 \newcommand{\nullspc}{\text{Null} \;}
 \renewcommand{\qed}{\hfill$\blacksquare$}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
