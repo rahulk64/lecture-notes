@@ -21,6 +21,10 @@
 \colorlet{light-red}{red!30}
 \colorlet{light-blue}{blue!30}
 \colorlet{light-green}{green!30}
+\colorlet{mellow-yellow}{yellow!50}
+\colorlet{light-cyan}{blue!30!green!30}
+\colorlet{light-purple}{blue!30!red!30}
+\colorlet{light-brown}{green!30!red!30}
 
 \hypersetup{
   linkcolor  = mylinkcolor!\myshade!black,
@@ -57,16 +61,16 @@
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=red!20]
+\node[anchor=east,rectangle,fill=light-red]
 {\strut Definition~\thedefn};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=red!20]
+\node[anchor=east,rectangle,fill=light-red]
 {\strut Definition~\thedefn:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=red!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=light-red,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
@@ -81,16 +85,16 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-blue]
 {\strut Theorem~\thetheo};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-blue]
 {\strut Theorem~\thetheo:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=light-blue,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
@@ -105,16 +109,16 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-brown]
 {\strut Lemma~\thelem};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-brown]
 {\strut Lemma~\thelem:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=light-brown,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
@@ -129,16 +133,16 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-purple]
 {\strut Proposition~\thelem};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-purple]
 {\strut Proposition~\thelem:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=light-purple,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
@@ -153,16 +157,16 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-cyan]
 {\strut Corollary~\thelem};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=blue!20]
+\node[anchor=east,rectangle,fill=light-cyan]
 {\strut Corollary~\thelem:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=light-cyan,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
@@ -177,16 +181,16 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=green!20]
+\node[anchor=east,rectangle,fill=green!30]
 {\strut Proof~\theprf};}}
 }%
 {\mdfsetup{%
 frametitle={%
 \tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=green!20]
+\node[anchor=east,rectangle,fill=green!30]
 {\strut Proof~\theprf:~#1};}}%
 }%
-\mdfsetup{innertopmargin=10pt,linecolor=green!20,%
+\mdfsetup{innertopmargin=10pt,linecolor=green!30,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
