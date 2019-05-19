@@ -1,0 +1,7 @@
+Changes in v2.0
+- Changed Name (easyclass --> lecnotes)
+- Created new color for optional Table of Content links
+- Created boxes and adjusted colors for the following:
+    - Theorem (light blue)
+    - Definition (light red)
+    - 
