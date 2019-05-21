@@ -46,6 +46,7 @@
 \RequirePackage[framemethod=TikZ]{mdframed}
 \RequirePackage{amsthm}
 \newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
@@ -76,6 +77,32 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
 \begin{mdframed}[]\relax%
 \label{#2}}{\end{mdframed}}
+
+%Example
+\newcounter{ex}[chapter] \setcounter{ex}{0}
+\renewcommand{\theex}{\arabic{chapter}.\arabic{ex}}
+\newenvironment{ex}[1][]{%
+\refstepcounter{ex}%
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=mellow-yellow]
+{\strut Example~\theex};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=mellow-yellow]
+{\strut Example~\theex:~#1};}}%
+}%
+\mdfsetup{innertopmargin=10pt,linecolor=white,%
+linewidth=2pt,topline=true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+}{\end{mdframed}}
+
 %Theorem
 \newcounter{theo}[chapter] \setcounter{theo}{0}
 \renewcommand{\thetheo}{\arabic{chapter}.\arabic{theo}}
