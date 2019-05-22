@@ -1,0 +1,13 @@
+Changes in v2.0
+- Changed Name (easyclass --> lecnotes)
+- Created new color for optional Table of Content links
+- Adjusted colors for the following:
+    - Theorem (light blue)
+    - Lemma (light brown)
+- Created the following:
+    - Definition (light red)
+    - Example (yellow) [no box]
+    - Proposition (light purple)
+    - Corollary (light cyan)
+- Added new math command macros
+- Created enumeration macro with set margins
