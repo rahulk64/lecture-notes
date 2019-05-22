@@ -1,19 +1,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% lecnotes.cls - LaTeX2e class for Lecture Note use.
 %% To Make Lecture Note for Computer Science/Math Courses
-%%	Currently at Version 2.0 [in development]
+%%  Currently at Version 2.0 [in development]
 %%  Version 1.0 written by Naijia Fan, 2019
 %%  Version 2.0 written by Rahul Krishnan, 2019
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{easyclass}[2/6/2019 custom lecture note class]
+\ProvidesClass{lecnotes}[custom lecture note class]
 \LoadClass[twoside=false]{scrbook}
 \RequirePackage{mathtools,amssymb,bm,bbold,enumerate}
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{hyperref,cleveref}
 
+
 \newcommand\myshade{90}
-\definecolor{dark-grey}{HTML}{150B61}
+\definecolor{dark-grey}{HTML}{150B61} %table of contents
 \colorlet{mylinkcolor}{NavyBlue}
 \colorlet{mycitecolor}{Aquamarine}
 \colorlet{myurlcolor}{Aquamarine}
@@ -25,6 +26,7 @@
 \colorlet{light-cyan}{blue!30!green!30}
 \colorlet{light-purple}{blue!30!red!30}
 \colorlet{light-brown}{green!30!red!30}
+
 
 \hypersetup{
   linkcolor  = mylinkcolor!\myshade!black,
@@ -297,6 +299,11 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
    execute at end node=$]
 \RequirePackage{graphicx}
 
+%=================================
+% setting margins
+\RequirePackage{enumitem}
+\newcommand{\enum}{\begin{enumerate}[leftmargin=0.7cm]}
+\newcommand{\stopenum}{\end{enumerate}}
 %=================================
 % title page
 % define university 
