@@ -9,5 +9,6 @@ Changes in v2.0
     - Example (yellow) [no box]
     - Proposition (light purple)
     - Corollary (light cyan)
+    - Properties (light orange)
 - Added new math command macros
 - Created enumeration macro with set margins
