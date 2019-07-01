@@ -26,6 +26,7 @@
 \colorlet{light-cyan}{blue!30!green!30}
 \colorlet{light-purple}{blue!30!red!30}
 \colorlet{light-brown}{green!30!red!30}
+\colorlet{light-orange}{orange!30}
 
 
 \hypersetup{
@@ -129,6 +130,31 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
 \begin{mdframed}[]\relax%
 \label{#2}}{\end{mdframed}}
+
+%Properties
+\newcounter{prope}[chapter] \setcounter{prope}{0}
+\newenvironment{prope}[1][]{%
+\refstepcounter{prope}%
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=light-orange]
+{\strut Properties};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=light-orange]
+{\strut Properties of~#1};}}%
+}%
+\mdfsetup{innertopmargin=10pt,linecolor=light-orange,%
+linewidth=2pt,topline=true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{#1}}{\end{mdframed}}
+
 %Lemma
 \newcounter{lem}[theo] %\setcounter{lem}{0}
 \renewcommand{\thelem}{\arabic{chapter}.\arabic{theo}}
@@ -201,6 +227,7 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 }
 \begin{mdframed}[]\relax%
 \label{#2}}{\end{mdframed}}
+
 %Proof
 \newcounter{prf}[theo]%\setcounter{prf}{0}
 \renewcommand{\theprf}{\arabic{chapter}.\arabic{theo}}
