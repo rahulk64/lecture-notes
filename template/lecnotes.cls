@@ -263,6 +263,8 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 \def\vec#1{{\ensuremath{\bm{{#1}}}}}
 \def\mat#1{\vec{#1}}
 \def\bvec#1{\mathbf{#1}}
+\def\bar#1{\overline{#1}}
+\def\inv#1{#1^{-1}}
 
 %=================================
 % convenient notations
@@ -286,6 +288,7 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
