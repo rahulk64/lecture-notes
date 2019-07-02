@@ -332,8 +332,17 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 %=================================
 % setting margins
 \RequirePackage{enumitem}
-\newcommand{\enum}{\begin{enumerate}[leftmargin=0.7cm]}
-\newcommand{\stopenum}{\end{enumerate}}
+\newenvironment{enum} 
+{ \begin{enumerate}[leftmargin=0.7cm] }
+{ \end{enumerate} } 
+% \newcommand{\enum}{\begin{enumerate}[leftmargin=0.7cm]}
+% \newcommand{\stopenum}{\end{enumerate}}
+\newenvironment{enumtight} 
+{ \begin{enumerate}[leftmargin=0.7cm]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt} }
+{ \end{enumerate} } 
 %=================================
 % title page
 % define university 
